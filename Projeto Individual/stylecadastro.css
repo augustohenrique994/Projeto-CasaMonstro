@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: black;
+
+}
+
+/* HEADER */
+
+.div_header {
+    background-color: rgb(0, 0, 0);
+    overflow: auto;
+    width: 100%;
+    border-bottom: 5px solid rgb(255, 0, 0);
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}   
+
+.container{
+    width: 90%;
+    margin: auto;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.container img {
+    height: 50px;
+    float: left;
+}
+
+.titulo{
+    text-shadow: -5px 10px 50px rgb(100, 100, 100);
+    margin: 0;
+    color: rgb(255, 255, 255);
+    margin-left: 70px;
+    float: left;
+    padding-top: 5px;
+}
+
+.destaque{
+    color: rgb(255, 0, 0);
+}
+
+.navbar{
+    list-style: none;
+    color: white;
+    float: right;
+    padding-top: 15px;
+    
+}
+
+.div_header .navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.active{
+    color: red;
+    text-shadow: 0 0 30px red;
+    text-transform: uppercase;
+}
+
+.navbar a:hover{
+    color: red;
+    text-shadow: 0 0 20px red;
+}
+
+.div_header .navbar li{
+    float: left;
+    margin-left: 20px;
+}
+
+/*BANNER*/
+
+.banner {
+    text-align: center;
+    background-image: url('Banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    /* border-bottom: 5px solid rgb(255, 0, 0); */
+    margin: 0;
+}
+
+.banner .container .texto{
+    color: rgb(255, 255, 255);
+}
+
+.banner .container h1{
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.banner h1 {
+    text-shadow: 0 0 50px red;
+}
+
+.banner h3 {
+    padding-bottom: 10px    ;
+}
+
+/* TELA LOGIN */
+
+/* .banner .container .login{
+    align-items: center;
+    justify-content: center;
+} */
+
+.login{
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+    width: 400px;
+    margin-left: 400px;
+    border: 5px solid red;
+    box-shadow: 0 0 10px red;
+    /* margin-bottom: 300px; */
+    position: absolute;
+    animation-name: animacao4;
+    animation-direction: reverse;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes animacao4{
+    0%{box-shadow: 0 0 10px red}
+    50% {box-shadow: 0 0 40px red;}
+    100% {box-shadow: 0 0 10px red;}
+}
+
+.login h2{
+    text-shadow: 0 0 10px white;
+}
+
+.login input{
+    text-align: center;
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid red;
+    height: 25px;
+    
+}
+
+.login input:focus{
+    box-shadow: 0 0 20px red;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    
+}
+
+.login button{
+    font-size: 20px;
+    width: 100px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    
+}
+
+.login button:hover{
+    background-color: red;
+    box-shadow: 0 0 20px red;
+    
+}
+
+.login h5 a{
+    text-decoration: none;
+    color: red;
+}
+
+.login h5 a:hover{
+    text-shadow: 0 0 10px red;
+}
+
+/* .login button:focus{
+    background-color: black;
+} */
+
+/*FOOTER*/
+
+footer {
+    position: relative;
+    background-color: #000000;
+    /* margin-top: 400px; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

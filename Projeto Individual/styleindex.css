@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: black;
+
+}
+
+/* HEADER */
+
+.div_header {
+    background-color: rgb(0, 0, 0);
+    overflow: auto;
+    width: 100%;
+    border-bottom: 5px solid rgb(255, 0, 0);
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}   
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.container img {
+    height: 50px;
+    float: left;
+}
+
+.titulo{
+    text-shadow: -5px 10px 50px rgb(100, 100, 100);
+    margin: 0;
+    color: rgb(255, 255, 255);
+    margin-left: 70px;
+    float: left;
+    padding-top: 5px;
+}
+
+.destaque{
+    color: rgb(255, 0, 0);
+}
+
+.navbar{
+    list-style: none;
+    color: white;
+    float: right;
+    padding-top: 15px;
+    
+}
+
+.div_header .navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.active{
+    color: red;
+    text-shadow: 0 0 30px red;
+    text-transform: uppercase;
+}
+
+.navbar a:hover{
+    color: red;
+    text-shadow: 0 0 20px red;
+}
+
+.div_header .navbar li{
+    float: left;
+    margin-left: 20px;
+}
+
+/*BANNER*/
+
+.banner {
+    text-align: center;
+    background-image: url('Banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    border-bottom: 5px solid rgb(255, 0, 0);
+    margin: 0;
+}
+
+.banner .container .texto{
+    color: rgb(255, 255, 255);
+}
+
+.banner .container h1{
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.banner h1 {
+    text-shadow: 0 0 50px red;
+}
+
+.banner h3 {
+    padding-bottom: 10px    ;
+}
+
+/*ARTISTAS*/
+
+.artistas{
+    text-align: center;
+    border-bottom: 5px solid red;
+    display: flex;
+    
+}
+
+.artistas h1{
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    text-shadow: 0 0 20px white;
+    
+}
+
+.artistas h2 {
+    text-shadow: 0 0 20px red;
+    color: red;
+}
+
+.artistas .artista1{
+    height: 300px;
+    width: 200px;
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: center;
+    float: left;
+    margin-right: 137px;
+}
+
+.artistas img{
+    box-shadow: 0 0 20px red;
+    animation-name: animacao;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes animacao{
+    0%{box-shadow: 0 0 20px red}
+    50% {box-shadow: 0 0 50px red;}
+    100% {box-shadow: 0 0 20px red;}
+}
+
+.artistas .artista1 h2{
+    position: absolute;
+    padding-top: 210px;
+}
+
+.artistas .artista2{
+    height: 300px;
+    width: 200px;
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: center;
+    float: left;
+    margin-right: 137px;
+}
+
+.artistas .artista2 h2{
+    position: absolute;
+    padding-top: 210px;
+}
+
+.artistas .artista3{
+    height: 300px;
+    width: 200px;
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: center;
+    float: left;
+    margin-right: 137px;
+}
+
+.artistas .artista3 h2{
+    position: absolute;
+    padding-top: 210px;
+}
+
+.artistas .artista4{
+    height: 300px;
+    width: 200px;
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+.artistas .artista4 h2{
+    position: absolute;
+    padding-top: 210px; 
+}
+
+.artistas img{
+    height: 200px;
+    /* float: left; */
+    
+}
+
+
+/* SAIBA MAIS */
+
+.saiba{
+    text-align: center;
+    display: flex;
+    border-bottom: 5px solid red;
+    /* float: left; */
+}
+
+.saiba h1{
+    margin:  0;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    text-shadow: 0 0 20px white;
+}
+
+.saiba h2{
+    text-align: left;
+    color: red;
+    text-shadow: 0 0 50px red;
+}
+
+.saiba h4{
+    text-align: left;
+}
+
+/* .saiba .imagens_saiba{
+    display: flex;
+    float: right;
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    position: absolute;  
+
+/* CONTATO */
+
+.contato{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.contato .container{
+    background-image: url(Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contato h1{
+    padding-top: 25px;
+    padding-bottom: 50px;
+    text-shadow: 0 0 20px white;
+}
+
+.contato .caixa_contato{
+    font-style: oblique;
+    /* display: flex; */
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 500px;
+    height: 500px;
+    margin-left: 360px;
+    border: 5px solid red;
+    box-shadow: 0 0 20px red;
+    animation-name: animacao2;
+    animation-direction: reverse;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes animacao2{
+    0%{box-shadow: 0 0 20px red}
+    50% {box-shadow: 0 0 50px red;}
+    100% {box-shadow: 0 0 20px red;}
+}
+
+.contato .caixa_contato input{
+    text-align: center;
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid red;
+    height: 25px;
+}
+
+.contato .caixa_contato input:focus{
+    box-shadow: 0 0 20px red;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.contato .caixa_contato #ipt_mensagem {
+    width: 400px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid red;
+    height: 150px;
+    text-align: left;
+}
+
+.contato .caixa_contato button{
+    font-size: 20px;
+    width: 100px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.contato .caixa_contato button:hover{
+    background-color: red;
+    box-shadow: 0 0 20px red;
+}
+
+/*FOOTER*/
+
+footer {
+    position: relative;
+    background-color: #000000;
+    /* margin-top: 400px; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
