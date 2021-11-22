@@ -128,7 +128,7 @@ body {
 }
 
 .artista .imagem1{
-    background-image: url('fotolp.jpg');
+    background-image: url('fotolp2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     /* background-size: 500px; */
@@ -142,7 +142,7 @@ body {
 }
 
 .artista .imagem2{
-    background-image: url('fotolp.jpg');
+    background-image: url('fotolp3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     /* background-size: 500px; */
